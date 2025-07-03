@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <style>
+    .project-card {
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="nav.html">This</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Disabled</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow-1 container my-4">
+    <h1 class="display-3 fw-bold text-center mb-5">PROJECTS</h1>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card project-card h-100 shadow-sm">
+          <img src="https://source.unsplash.com/400x200/?code,project" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Project One</h5>
+            <p class="card-text">A short description of your first project. Highlight features, tech stack, or what makes it special.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card h-100 shadow-sm">
+          <img src="https://source.unsplash.com/400x200/?app,website" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Project Two</h5>
+            <p class="card-text">A short description of your second project. You can add more details or a link to GitHub.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card h-100 shadow-sm">
+          <img src="https://source.unsplash.com/400x200/?design,portfolio" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Project Three</h5>
+            <p class="card-text">A short description of your third project. Showcase your skills and creativity here.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-body-tertiary text-center py-3 border-top mt-auto">
+    <div class="container">
+      <p class="mb-0">© 2025 Its mine. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

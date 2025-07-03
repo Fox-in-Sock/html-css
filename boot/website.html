@@ -1,0 +1,465 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Modern Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background: #f8f9fa;
+            color: #22223b;
+            line-height: 1.6;
+        }
+        header {
+            background: #4f8cff;
+            color: white;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        nav .logo {
+            font-size: 1.7rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #fbb13c;
+        }
+        .hero {
+            background: linear-gradient(90deg, #4f8cff 60%, #fbb13c 100%);
+            color: white;
+            padding: 5rem 2rem 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .hero .cta {
+            background: #22223b;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .hero .cta:hover {
+            background: #fbb13c;
+            color: #22223b;
+        }
+        section {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(34, 34, 59, 0.08);
+        }
+        section h2 {
+            color: #4f8cff;
+            margin-bottom: 1rem;
+        }
+        .services {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service {
+            flex: 1;
+            min-width: 220px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.2rem;
+            box-shadow: 0 1px 4px rgba(34, 34, 59, 0.06);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .service h3 {
+            margin-bottom: 0.7rem;
+            color: #fbb13c;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.7rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            background: #4f8cff;
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: #fbb13c;
+            color: #22223b;
+        }
+        footer {
+            background: #22223b;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 700px) {
+            nav ul {
+                gap: 1rem;
+            }
+            .services {
+                flex-direction: column;
+            }
+            section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyWebsite</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <h1>Welcome to My Modern Website</h1>
+        <p>Your one-stop solution for web design, development, and more. Built with only HTML and CSS!</p>
+        <a href="#contact"><button class="cta">Get in Touch</button></a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            We are a passionate team dedicated to building beautiful, responsive, and user-friendly websites.
+            With years of experience and a keen eye for design, we help businesses and individuals establish a strong online presence.
+        </p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Web Design</h3>
+                <p>Modern, clean, and responsive designs tailored to your brand and audience.</p>
+            </div>
+            <div class="service">
+                <h3>Development</h3>
+                <p>Efficient and robust websites built using the latest technologies and best practices.</p>
+            </div>
+            <div class="service">
+                <h3>Consulting</h3>
+                <p>Expert advice to help you make the right decisions for your online strategy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 MyWebsite. All rights reserved.
+    </footer>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foodie's Hub - Order Now</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: white;
+      color: black;
+      padding: 5px;
+    }
+
+    section {
+      padding: 50px 10%;
+      border-bottom: 1px solid #ccc;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    /* Flexbox Menu */
+    .menu {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .menu-item {
+      flex: 1 1 250px;
+      border: 2px solid black;
+      padding: 20px;
+      background: #f8f8f8;
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.03);
+    }
+
+    /* Grid Popular Dishes */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .grid-box {
+      border: 2px solid black;
+      padding: 20px;
+      background: #eee;
+      text-align: center;
+    }
+
+    /* Order Summary Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background: black;
+      color: white;
+    }
+
+    /* Box Model Illustration */
+    .box-model {
+      width: 100%;
+      padding: 20px;
+      border: 4px solid black;
+      margin-top: 20px;
+      background: #fafafa;
+    }
+
+    /* iFrame Location */
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 2px solid black;
+      margin-top: 20px;
+    }
+
+    /* Animation */
+    .order-button {
+      background: black;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    footer {
+      text-align: center;
+      background: black;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    pre {
+      background: #f0f0f0;
+      padding: 20px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Foodie's Hub</h1>
+    <p>Your favorite meals delivered fresh</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#popular">Popular</a>
+    <a href="#order">Order Summary</a>
+    <a href="#location">Location</a>
+    <a href="#frameset">Frameset</a>
+  </nav>
+
+  <section id="menu">
+    <h2>Our Menu (Flex Layout)</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <h3>Pizza</h3>
+        <p>Hot and cheesy</p>
+        <button class="order-button">Order Now</button>
+      </div>
+      <div class="menu-item">
+        <h3>Burger</h3>
+        <p>Juicy and tasty</p>
+        <button class="order-button">Order Now</button>
+      </div>
+      <div class="menu-item">
+        <h3>Pasta</h3>
+        <p>Italian classic</p>
+        <button class="order-button">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="popular">
+    <h2>Popular Dishes (Grid Layout)</h2>
+    <div class="grid">
+      <div class="grid-box">Cheese Pizza</div>
+      <div class="grid-box">Veg Burger</div>
+      <div class="grid-box">White Sauce Pasta</div>
+      <div class="grid-box">Spicy Noodles</div>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>Order Summary (Table)</h2>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Qty</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Pizza</td>
+        <td>2</td>
+        <td>$20</td>
+      </tr>
+      <tr>
+        <td>Burger</td>
+        <td>1</td>
+        <td>$8</td>
+      </tr>
+    </table>
+
+    <div class="box-model">
+      Total Amount includes all taxes and delivery charges.
+    </div>
+  </section>
+
+  <section id="location">
+    <h2>Our Location (iFrame)</h2>
+    <iframe src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </section>
+
+  <section id="frameset">
+    <h2>Frameset Example (Deprecated)</h2>
+    <p>Below is an example of how framesets looked (not used in modern sites):</p>
+    <pre>
+frameset cols="50%,50%">
+  frame src="menu.html"
+  frame src="order.html"
+/frameset
+    </pre>
+  </section>
+
+  <footer>
+    &copy; 2025 Foodie's Hub. All rights reserved.
+  </footer>
+
+</body>
+</html>
